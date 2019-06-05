@@ -1,8 +1,10 @@
 package sort;
 
+import util.Printer;
+
 public class quickSort {
 	public static void main(String args[]){
-		int[] nums = {4,5,7,3,2,1,9}; 
+		int[] nums = {4,5,7,3,2,1,5}; 
 		quicksort(nums,0,nums.length-1);
 		System.out.println(nums);
 	}
@@ -31,6 +33,7 @@ public class quickSort {
 		int temp = a[i];
 		a[i] = pivot;
 		a[right] = temp;
+		System.out.println(Printer.printArray(a));
 		return i;
 	}
 	

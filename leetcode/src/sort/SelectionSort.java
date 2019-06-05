@@ -1,5 +1,7 @@
 package sort;
 
+import util.Printer;
+
 public class SelectionSort {
 	public static void main(String args[]){
 		int[] nums = {4,5,6,3,2,1,7};
@@ -15,7 +17,8 @@ public class SelectionSort {
 				nums[min] = nums[i];
 				nums[i] = temp;
 			}
+			System.out.println(Printer.printArray(nums));
 		}
-		System.out.println(nums);
+		System.out.println(Printer.printArray(nums));
 	}
 }

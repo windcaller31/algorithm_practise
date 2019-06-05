@@ -20,7 +20,8 @@ public class MergeSort {
 		merge(nums,start,mid,end,temp);
 	}
 	
-	//left mid right
+	//left mid right -> start mid end
+	//合并左半部分和有半部分
 	public static void merge(int[] nums,int left,int mid,int right,int[] temp){
 		int i = left;
 		int j = mid+1;

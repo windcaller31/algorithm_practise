@@ -1,5 +1,7 @@
 package sort;
 
+import util.Printer;
+
 public class BubbleSort {
 	public static void main(String args[]){
 		int[] nums = {4,5,6,3,2,1};
@@ -16,8 +18,8 @@ public class BubbleSort {
 			if(!flag){
 				break;
 			}
-			System.out.println(nums);
+			System.out.println(Printer.printArray(nums));
 		}
-		System.out.println(nums);
+		System.out.println(Printer.printArray(nums));
 	}
 }

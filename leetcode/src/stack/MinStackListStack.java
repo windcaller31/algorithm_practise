@@ -1,13 +1,13 @@
-package liststack;
+package stack;
 
 import util.ListNode;
 
-public class MinStack {
+public class MinStackListStack {
 	private ListNode bottom = null;
 	private ListNode top = null;
 
     /** initialize your data structure here. */
-    public MinStack() {
+    public MinStackListStack() {
         
     }
     
