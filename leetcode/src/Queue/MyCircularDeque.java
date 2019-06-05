@@ -1,4 +1,4 @@
-package sort;
+package Queue;
 
 //leetcod 641
 public class MyCircularDeque {	
