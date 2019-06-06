@@ -22,7 +22,7 @@ public class findMaxK {
 	public static int partition(int[] a,int left,int right){
 		int pivot = a[right];
 		int i = left;
-		for(int j =i+1;j<right;j++){
+		for(int j = i+1;j<right;j++){
 			if(a[j]<pivot){
 				int temp = a[i];
 				a[i] = a[j];
@@ -30,10 +30,27 @@ public class findMaxK {
 				i++;
 			}
 		}
-		int temp = a[i];
-		a[i] = a[right];
-		a[right] = temp;
+		a[right] = a[i];
+		a[i] = pivot;
 		return i;
 	}
+	
+	
+//	public static int partition(int[] a,int left,int right){
+//		int pivot = a[right];
+//		int i = left;
+//		for(int j =i+1;j<right;j++){
+//			if(a[j]<pivot){
+//				int temp = a[i];
+//				a[i] = a[j];
+//				a[j] = temp;
+//				i++;
+//			}
+//		}
+//		int temp = a[i];
+//		a[i] = a[right];
+//		a[right] = temp;
+//		return i;
+//	}
 	
 }

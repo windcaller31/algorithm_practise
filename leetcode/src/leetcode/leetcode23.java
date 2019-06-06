@@ -65,6 +65,9 @@ public class leetcode23 {
 				result.next = minNode;
 				result = result.next;
 			}
+			//如果k个node中某个已经为空则最外层遍历-1次
+			//否则minNode所在的哪一个node=node.next继续遍历
+			//直到只剩下一个node为止
 			if(lists[index]==null){
 				break;
 			}

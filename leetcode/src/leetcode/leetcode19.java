@@ -16,6 +16,7 @@ public class leetcode19 {
 		removeNthFromEnd(n11, 1);
 	}
 	
+	//1先走，走到正数第n个位置，2走，n走到尾部的时候，2正好走到倒数第n个位置，删除2即可
 	public static ListNode removeNthFromEnd(ListNode head, int n) {
 		if(n==1){
 			if(head.next==null){
@@ -31,13 +32,11 @@ public class leetcode19 {
 			return head;
 		}
 		ListNode n1 = head;
-		ListNode n1Prev = null;
 		ListNode n2 = null;
 		ListNode n2Prev = null;
 		int position = 1;
 		int len = 1;
 		while(n1.next!=null){
-			n1Prev = n1;
 			n1 = n1.next;
 			position += 1;
 			if(position == n){

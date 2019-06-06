@@ -4,7 +4,7 @@ import util.Printer;
 
 public class quickSort {
 	public static void main(String args[]){
-		int[] nums = {4,5,7,3,2,1,5}; 
+		int[] nums = {4,5,5,3,2,1,7}; 
 		quicksort(nums,0,nums.length-1);
 		System.out.println(nums);
 	}
