@@ -10,7 +10,7 @@ function KMP( ts,  ps) {
       i++;
       j++;
     } else {
-     // i不需要回溯了
+     // i不需要回溯了 
      // i = i - j + 1;
      j = next[j]; // j回到指定位置
    }
