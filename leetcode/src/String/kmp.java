@@ -6,7 +6,7 @@ public class kmp {
 		char b[] = {'a','c','d','a'};
 		System.out.print(kmp_compare(a, a.length, b, b.length));
 	}
-	
+
 	public static int kmp_compare(char a[], int n, char b[], int m) {
 		int[] next = getNexts(b, m);//获取next数组后缀匹配前缀字符数组
 		int j = 0;
